@@ -54,7 +54,20 @@ public class MainActivity extends AppCompatActivity {
 
         float troco = dinheiro - valorContaTaxa;
         mTroco.setText(format("R$ %.2f", troco));
-
-
     }
+
+    public void limparValores(View view){
+
+        mValorConta.setText("");
+        mDinheiro.setText("");
+        mTaxaServico.setText("");
+        mTotal.setText("");
+        mTroco.setText("");
+    }
+
+
+
+
+
+
 }
