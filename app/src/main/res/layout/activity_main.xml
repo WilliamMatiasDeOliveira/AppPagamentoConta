@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4E60FF"
+            android:padding="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pagamento de Contas"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Valor da Conta" />
+
+            <EditText
+                android:id="@+id/valorConta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:hint="R$" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinheiro"
+                android:layout_marginTop="20sp"/>
+
+            <EditText
+                android:id="@+id/dinheiro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="R$"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp">
+            <Button
+                android:onClick="limparValores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpar Valores"
+                android:textColor="#000"
+                android:backgroundTint="#c6c6c6"
+                android:layout_weight="1"/>
+            <Button
+                android:onClick="calcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular"
+                android:textColor="#fff"
+                android:backgroundTint="#FF1B2D"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Valor da Taxa de Serviço"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/taxaServico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginBottom="20sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginBottom="20sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Troco"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/troco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginBottom="20sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
